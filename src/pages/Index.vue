@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-btn color="deep-purple">Success</v-btn>
-    <v-btn color="error">Error</v-btn>
-    <v-btn color="warning">Warning</v-btn>
+    <v-btn color="warning">Success</v-btn>
+    <v-btn color="primary">Error</v-btn>
+    <v-btn color="success">Warning</v-btn>
     <v-btn color="info">Info</v-btn>
-    <v-toolbar color="deep-purple">
+    <v-toolbar color="error">
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Title</v-toolbar-title>
       <v-spacer></v-spacer>

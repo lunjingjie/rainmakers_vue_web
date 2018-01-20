@@ -10,10 +10,10 @@ import router from '@/router';
 
 Vue.use(Vuetify, {
   theme: {
-    primary: '#292961',
+    primary: '#3f51b5',
+    secondary: '#b0bec5',
+    accent: '#8c9eff',
     error: '#b71c1c',
-    timeline: '#2196F3',
-    btnColor: '#d1d1f0',
   },
 });
 

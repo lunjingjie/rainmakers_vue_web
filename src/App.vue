@@ -16,3 +16,20 @@
     name: 'app',
   };
 </script>
+<style>
+.primary {
+  background-color: #1867c0;
+}
+.error {
+  background-color: #ff5252;
+}
+.warning {
+  background-color: #ffc107;
+}
+.success {
+  background-color: #4caf50;
+}
+.info {
+  background-color: #2196f3;
+}
+</style>
