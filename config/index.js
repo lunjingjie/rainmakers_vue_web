@@ -30,14 +30,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api/geoserver': {
+      /* '/api/geoserver': {
         target: 'http://192.168.1.164:8080',
         pathRewrite: {
           '^/api/geoserver': '/geoserver'
         }
-      },
+      },*/
       '/api': {
-        target: 'http://192.168.1.130:1111',
+        target: 'http://localhost:8084',
         pathRewrite: {
           '^/api': '/'
         }
