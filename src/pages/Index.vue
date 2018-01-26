@@ -19,7 +19,11 @@
                 <v-text-field
                   label="API"
                   v-model="api"
+                  loading
                 ></v-text-field>
+                <v-alert type="error" :value="value">
+                  please input your api url.
+                </v-alert>
               </v-flex>
               <v-flex xs2>
                 <v-btn color="primary" @click="outPutJson">TEST</v-btn>
@@ -50,13 +54,26 @@
     name: 'Index',
     data() {
       return {
-        title: '',
+        title: 'output result......',
+        api: '',
+        value: false,
       };
+    },
+    watch: {
+      api() {
+        this.value = false;
+      },
     },
     methods: {
       outPutJson() {
-        TestService.getUserList().then((res) => {
-          this.title = res;
+        if (this.api === '') {
+          this.value = true;
+          return;
+        }
+        TestService.getUserList(this.api).then((res) => {
+          this.title = JSON.stringify(res.data);
+        }).catch((error) => {
+          this.title = error;
         });
       },
     },

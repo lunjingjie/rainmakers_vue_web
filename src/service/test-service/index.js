@@ -1,7 +1,7 @@
 import TestApi from '@/api/test-api';
 
-function getUserList() {
-  return TestApi.getUserList();
+function getUserList(api) {
+  return TestApi.getUserList(api);
 }
 
 export default {

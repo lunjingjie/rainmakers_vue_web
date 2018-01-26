@@ -1,8 +1,7 @@
 import axios from '@/api/axios';
-import { USERLIST } from '@/api/api-path';
 
-function getUserList() {
-  return axios.get(USERLIST);
+function getUserList(api) {
+  return axios.get(api);
 }
 
 export default {
